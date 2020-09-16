@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh tong 20 so fibonacci dau tien</title>
+</head>
+<body>
+<script>
+    let a=0;
+    let b=1;
+    let subtotal=0;
+    let total =2;
+    let num=+prompt("Please input a number");
+        for(i=2;i<num;i++){
+            total +=a+b;
+            subtotal=a;
+            a=b;
+            b=subtotal+a;
+        }
+        document.write("Summarize of first of num is "+ total);
+</script>
+</body>
+</html>

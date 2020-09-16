@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 3</title>
+</head>
+<body>
+<script>
+
+       let a=0;
+       let b=1;
+       let sum="0,1,";
+       let num=+prompt("Nhap n");
+       for (let i=0;i<=num;i++){
+           let fibo =a+b;
+           sum+=a+b+",";
+           a=b;
+           b=fibo;
+       }document.write(sum);
+</script>
+</body>
+</html>

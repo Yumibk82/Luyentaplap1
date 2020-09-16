@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci chia 5</title>
+</head>
+<body>
+<script>
+    let a=0;
+    let b=1;
+    let num=+prompt("Nhap n");
+    for (let i=2;i<num;i++) {
+        let c = a + b;
+        a = b;
+        b = c;
+        if (c%5==0) {
+            alert(c);
+            break;
+        }
+    }
+</script>
+</body>
+</html>
